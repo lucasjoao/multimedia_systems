@@ -1,0 +1,8 @@
+A. Tamanho teórico: ((44100Hz * 16 bits) / 8) * 10s = 882000 bytes.
+O tamanho em disco é maior devido ao cabeçalho do formato .wav que é armazenado juntamente com o arquivo. O cabeçalho possui 44 bytes, logo o tamanho do arquivo em disco é 882044.
+
+B. Tamanho teórico: ((11025Hz * 16 bits) / 8) * 10s = 220500 bytes. O tamanho da maior componente de frequência é 5504Hz. O som mudou devido ao fato de que a nova frequência de amostragem faz com que as frequências superiores à ela sejam filtradas (silenciadas), gerando descontinuidades no som.
+
+C. Tamanho teórico: ((11025Hz * 8 bits) / 8) * 10s = 110250 bytes. O tamanho da maior componente de frequência é 5504Hz. O ruído ocorre devido ao erro de quantificação já que foi aumentado o passo de quantificação (menor número de bits) que define a qualidade da digitalização. Quanto maior o passo de quantificação, menor é a resolução da medida da amplitude, logo, ocasiona o ruído.
+
+D. Tamanho teórico: ((8000Hz * 8 bits) / 8) * 10s = 80000 bytes. O tamanho da maior componente de frequência é 3994Hz. Nesse caso, o ruído é um pouco diferente da questão anterior devido ao fato de que as frequências superiores à 8000Hz foram filtradas, logo, modificou a percepção do ruído.
