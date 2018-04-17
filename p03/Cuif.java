@@ -67,20 +67,20 @@ public class Cuif {
            		raster[i][j][0] = r;
            }
    	 	}
-   	 	// for (int i=0; i<height; i++){
-      //       for (int j=0; j<width; j++){
-      //       		g = rasterbmp[i][j][1];
-      //          		cuiffile[offset++] = (byte)(g&0xff);
-      //          		raster[i][j][1] = g;
-      //       }
-    	 // }
-   	 	// for (int i=0; i<height; i++){
-      //       for (int j=0; j<width; j++){
-      //       		b = rasterbmp[i][j][2];
-      //          		cuiffile[offset++] = (byte)(b&0xff);
-      //          		raster[i][j][2] = b;
-      //       }
-    	// }
+   for (int i=0; i<height; i++){
+             for (int j=0; j<width; j++){
+             		g = rasterbmp[i][j][1];
+                		cuiffile[offset++] = (byte)(g&0xff);
+                		raster[i][j][1] = g;
+             }
+    	  }
+   	 	 for (int i=0; i<height; i++){
+             for (int j=0; j<width; j++){
+             		b = rasterbmp[i][j][2];
+                		cuiffile[offset++] = (byte)(b&0xff);
+                		raster[i][j][2] = b;
+             }
+    	 }
     }
 
     // Leitura de um arquivo Cuif1

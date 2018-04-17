@@ -34,7 +34,7 @@ public final class PSNR {
 	    	/* TODO
 	    	 * Implemente o cálculo do PSNR
 	    	 */
-				 double x = Math.pow((Math.pow(2, bpp) - 1), 2) / mae(original, decodificado);
+			double x = Math.pow((Math.pow(2, bpp) - 1), 2) / mae(original, decodificado);
 
 	    	return 10 * Math.log10(x);
 	    }

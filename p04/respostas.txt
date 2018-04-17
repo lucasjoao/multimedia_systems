@@ -1,0 +1,7 @@
+Roteiro parte 3:
+Questão 1:
+
+Questão 2:
+Cuif1: Infinito
+Cuif2: 120.29483991609402 dB
+Não há perdas. O valor obtido de 120dB se deve ao fato de que comparamos uma imagem RGB com uma imagem YCbCr. Como são espaços de cores diferentes, haverá ruído nessa comparação.
