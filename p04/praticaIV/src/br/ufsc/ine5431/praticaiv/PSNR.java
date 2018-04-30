@@ -7,7 +7,6 @@ public final class PSNR {
 	 *  Ferramenta que calcula o PSNR entre um arquivo BMP original e um arquivo BMP decodificado
 	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		if (args.length!=2) {
 	    	System.out.println("Número errado de argumentos:" + args.length);
 	    	System.out.println("Sintaxe: java PSNR  <arquivo BMP original> <arquivo BMP decodificado>");
@@ -31,18 +30,12 @@ public final class PSNR {
 	}
 
 	 private static double psnr(int[][][] original, int[][][] decodificado, int bpp) {
-	    	/* TODO
-	    	 * Implemente o cálculo do PSNR
-	    	 */
 			double x = Math.pow((Math.pow(2, bpp) - 1), 2) / mae(original, decodificado);
 
 	    	return 10 * Math.log10(x);
 	    }
 
 	 private static double mae(int[][][] original, int[][][] decodificado)  {
-		 /* TODO
-		  * Implemente aqui o cálculo do MAE. Dica: não esqueça de aplicar o cast (double) e divisões de números inteiros
-		  */
 		 int soma = 0;
 		 int nlinhas = original[0].length;
 		 int ncolunas = original.length;

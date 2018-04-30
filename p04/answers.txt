@@ -1,7 +1,17 @@
-Roteiro parte 3:
+ROTEIRO PARTE 3:
+
 Questão 1:
+Não há compressão, porque a diferença do 1 para o 2 é somente o espaço de cor utilizado, e, essa mudança não gera compressão.
 
 Questão 2:
 Cuif1: Infinito
 Cuif2: 120.29483991609402 dB
-Não há perdas. O valor obtido de 120dB se deve ao fato de que comparamos uma imagem RGB com uma imagem YCbCr. Como são espaços de cores diferentes, haverá ruído nessa comparação.
+Sim, há perdas. O valor obtido de 120dB se deve ao fato de que comparamos uma imagem RGB com uma imagem YCbCr. Como são espaços de cores diferentes, haverá ruído nessa comparação, que é proveniente das pequenas perdas geradas após as transformações.
+
+ROTEIRO PARTE 4:
+
+Questão 1:
+JazzMan1.cuif possui o tamanho de 196628.
+JazzMan3.cuif possui o tamanho de 163664.
+A taxa de compressão é de 196628 / 163664, ou seja, aproximadamente 1.20.
+O princípio da compressão utilizada na codificação de Huffman é a estatística, já que se trata de uma compressão sem perdas onde se utiliza um código menor para representar símbolos comuns, e, um código maior para símbolos poucos frequentes.
