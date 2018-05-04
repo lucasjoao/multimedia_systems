@@ -27,7 +27,7 @@ JazzMan4.cuif possui o tamanho de 115467.
 A taxa de compressão é de 196628 / 115467, ou seja, aproximadamente 1.70.
 
 Questão 6:
-PSNR obtido com o Cuif4 de 144.4943974009916 dB.
+PSNR obtido com o Cuif4 de 144.4943974009916 dB. O motivo de existir erros na versão 4 não é devido a mudança de espaço de cor, que era o motivo para as versões anteriores. Aqui o erro acontece devido a implementação feita para o RLE, que por definição não faz isso, mas por decisões de implementação passou a fazer. Essa diferença de motivos é a razão dos PSNRs serem diferentes.
 
 Questão 7:
 A imagem que obteve maior compressão foi o JazzMan. Isso acontece porque trata-se de uma imagem com muito mais repetições de símbolos que a lena. Essa repetição de símbolos pode ser visualizada nas diversas áreas da imagem que possuem cores iguais. Como o RLE só possui ganhos relevantes se houver grandes agrupamentos de símbolos iguais, então esse já era o resultado esperado.
